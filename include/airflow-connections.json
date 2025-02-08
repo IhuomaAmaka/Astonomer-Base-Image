@@ -1,0 +1,41 @@
+[
+  {
+    "conn_id":"snowflake_eagai_east",
+    "conn_type":"snowflake",
+    "host":"$SNOWSQL_ACCOUNT",
+    "login":"$SNOWSQL_USER",
+    "password":"$SNOWSQL_PWD",
+    "extra":{
+      "authenticator":"oauth",
+      "role": "ETL",
+      "warehouse": "CICD_WH"
+      "okta_oauth_url": "$OKTA_OAUTH_URL",
+      "okta_oauth_auth_code": "OKTA_SSO_API_AUTH"
+    }
+  },
+  {
+    "conn_id":"s3_connect",
+    "conn_type": "aws",
+    "Login":"$AWS_ACCESS_KEY",
+    "password": "$AWS_SECRET_ACCESS_KEY"
+  },
+  {
+    "conn_id": "slack",
+    "conn_type": "http",
+    "host": "$SLACK_WEBHOOK",
+    "password": "$SLACK_TOKEN",
+    "extra": {
+      "channel": "$SLACK_CHANNEL",
+      "custom_icon": "$SLACK_ICON",
+      "test_enabled": "$SLACK_ENABLE_TEST",
+      "test_channel": "$SLACK_CHANNEL_TEST"
+    }
+  },
+  {
+    "conn_id": "pond_auth",
+    "conn_type": "http",
+    "host": "$POND_HOST",
+    "login": "$POND_USER",
+    "password": "$POND_PWD"
+  }
+]

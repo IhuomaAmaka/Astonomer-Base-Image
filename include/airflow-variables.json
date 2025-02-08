@@ -1,0 +1,6 @@
+{
+    "pond_env_postfix": "",
+    "env_postfix": "",
+    "ingestion_concurrency": 10,
+    "fact_concurrency": 4
+}

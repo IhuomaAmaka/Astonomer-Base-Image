@@ -1,0 +1,19 @@
+ ## Unit Testing 
+ tox==3.23.0 
+ pytest==6.2.2 
+ mock==4.0.3 
+ requests-mock==1.8.0 
+ 
+ ## DBT Install 
+ dbt-core==1.8.3 
+ dbt-snowflake==1.8.3 
+ 
+ ## Decreases DBT Compile Time 
+ pyyaml==6.0.1 
+ 
+ ## Required for dbt-core 1,7.3.Review and remove in future upgrades
+ 
+ protobuf==4.25.3 
+ 
+ # Needs Latest as otherwise it will default to an incompatible version 
+ typing_extensions==4.8.0
